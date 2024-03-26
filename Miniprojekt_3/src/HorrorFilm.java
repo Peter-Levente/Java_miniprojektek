@@ -20,7 +20,7 @@ public class HorrorFilm extends Film implements IKorhataros {
     }
 
     @Override
-    public int Buntetes(int kor) {
+    public int buntetes(int kor) {
         if (kor - korh < 0) {
             return Math.abs(kor - korh) * getAr();
         }
@@ -41,7 +41,7 @@ public class HorrorFilm extends Film implements IKorhataros {
         int osszBuntetes = 0;
         for (IKorhataros film : films) {
             if (film instanceof HorrorFilm) {
-                osszBuntetes += ((HorrorFilm) film).Buntetes(kor);
+                osszBuntetes += ((HorrorFilm) film).buntetes(kor);
             }
         }
         return osszBuntetes;

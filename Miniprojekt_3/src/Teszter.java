@@ -24,7 +24,7 @@ public class Teszter {
             System.out.println(film);
         }
 
-        Film.RendezesArSzerint(films);
+        Film.rendezesArSzerint(films);
 
         ArrayList<IKorhataros> korhataros_filmek = HorrorFilm.getHorrorFilms(films);
         System.out.println("\nKorhatáros filmek:");

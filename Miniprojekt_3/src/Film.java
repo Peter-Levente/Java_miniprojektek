@@ -45,7 +45,7 @@ public class Film {
         }
     }
 
-    public void Velemenyezes(int velemeny) {
+    public void velemenyezes(int velemeny) {
         if (velemeny >= 1 && velemeny >= 5) {
             for (int i = 0; i < velemenyek.length; i++) {
                 if (velemenyek[i] == 0) {
@@ -58,7 +58,7 @@ public class Film {
         }
     }
 
-    public void Atlag(String filmCim, int[] velemenyek_tomb) {
+    public void atlag(String filmCim, int[] velemenyek_tomb) {
         double sum = 0;
         double atlag;
 
@@ -74,7 +74,7 @@ public class Film {
         }
     }
 
-    public static void RendezesArSzerint(ArrayList<Film> filmek) {
+    public static void rendezesArSzerint(ArrayList<Film> filmek) {
         for (int i = 0; i < filmek.size(); i++) {
             for (int j = 0; j < filmek.size() - 1; j++) {
                 if (filmek.get(j).getAr() < filmek.get(j + 1).getAr()) {
